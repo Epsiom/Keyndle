@@ -13,10 +13,10 @@
   
 </head>
 
-<body ng-app="MyApp" ng-controller="TestController" ng-keypress="changePage($event)">
+<body ng-app="MyApp" ng-controller="TestController" ng-keypress="changePage($event)" ng-dblclick="onclickedd($event)">
   <div ng-cloak="" class="tabsdemoDynamicHeight" >
   <md-content>
-    <md-tabs md-dynamic-height="" md-border-bottom="" md-selected="selectedTab">
+    <md-tabs md-dynamic-height="" md-border-bottom="" md-selected="selectedTab" md-no-pagination="false">
       <md-tab label="one">
         <md-content class="md-padding">
           <h1 class="md-display-2">Tab One</h1>
@@ -39,7 +39,10 @@
       </md-tab>
     </md-tabs>
   </md-content>
-</div>
+    <div ng-if="showModal">Definition</div>
+
+  </div>
+
 
 <!--
 Copyright 2016 Google Inc. All Rights Reserved. 
@@ -52,8 +55,10 @@ Use of this source code is governed by an MIT-style license that can be foundin 
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
 <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
 <script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.js'></script>
+  <!--<script data-require="ui-bootstrap@*" data-semver="0.12.1"
+          src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+-->
 
-    <script  src="js/index.js"></script>
-
+  <script  src="js/index.js"></script>
 </body>
 </html>
