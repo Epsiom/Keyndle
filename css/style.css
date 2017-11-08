@@ -8,7 +8,13 @@
   .tabsdemoDynamicHeight md-content h1:first-child {
     margin-top: 0; }
 
+.firstW{
+  margin-left: 40px;
+}
 
+.modd{
+  position: absolute;
+}
 /*
 Copyright 2016 Google Inc. All Rights Reserved. 
 Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
