@@ -9,11 +9,21 @@
     margin-top: 0; }
 
 .firstW{
-  margin-left: 40px;
+  font-weight: bold;
 }
-
+.classWord{
+  color: blue;
+}
 .modd{
   position: absolute;
+}
+
+button{
+  margin-right: 30px;
+  margin-left: 5px;
+}
+span{
+  font-size: 24px;
 }
 /*
 Copyright 2016 Google Inc. All Rights Reserved. 
