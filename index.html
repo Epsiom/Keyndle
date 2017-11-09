@@ -21,7 +21,7 @@
       <md-tab ng-repeat="tab in tabs track by $index" label="{{$index}}"  ng-disabled="true">
 
         <md-content class="md-padding">
-          <button ng-click="previous()">Précédent</button><br>
+          <button ng-click="previous()">Précédent</button><button ng-click="closeTab()" class="quit">Quiter</button><br>
 
 <div ng-repeat="line in tab track by $index" ng-class="classLine($index)">
           <span ng-repeat="word in line track by $index" ng-click="onclickedd($event,$parent.$parent.$index,$parent.$index,$index)" ng-class="classWord($parent.$index,$index)">

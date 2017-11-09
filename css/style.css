@@ -14,6 +14,17 @@
 .classWord{
   color: blue;
 }
+
+span:focus {
+  outline: none;
+  border: 0;
+}
+
+.quit{
+  color: red;
+  margin-left: 60px;
+}
+
 .modd{
   position: absolute;
 }
